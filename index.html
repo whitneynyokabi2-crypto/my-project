@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <h1 style="color: red;">Project title: Whity Cash</h1>
+      <h1 style="color:rgb(255, 17, 0);">Project title: Whity Cash</h1>
       <p class="problem-statement">We believe that newly employed youths will be helped by a saving app to save some of their money and help budget them because 68% of newly employed youths cannot save because they do not know how to budget.</p>
     </header>
     <main>
@@ -24,6 +24,48 @@
   <input type="number" id="salaryInput" placeholder="Enter your salary" />
   <button onclick="handleSalarySubmit()">Save Salary</button>
 </section>
+<section id="feature">
+  <h2>Budget Your Salary</h2>
+  <div class="card">
+    <label for="salaryInput">Enter Your Salary</label>
+    <input type="number" id="salaryInput" placeholder="Enter your salary" min="0" />
+    <button type="button" id="saveSalaryBtn">Save Salary</button>
+  </div>
+  <div id="budgetSection" class="card hidden">
+    <h3>Drag the sliders to set your budget</h3>
+
+
+    <div class="slider-group">
+      <label>
+        <span>Needs</span>
+        <span id="needsValue">50%</span>
+      </label>
+      <input type="range" id="needsSlider" min="0" max="100" value="50" />
+      <progress id="needsBar" max="100" value="50"></progress>
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Wants</span>
+        <span id="wantsValue">30%</span>
+      </label>
+      <input type="range" id="wantsSlider" min="0" max="100" value="30" />
+      <progress id="wantsBar" max="100" value="30"></progress>
+    </div>
+    <div class="slider-group">
+      <label>
+        <span>Savings</span>
+        <span id="savingsValue">20%</span>
+      </label>
+      <input type="range" id="savingsSlider" min="0" max="100" value="20" />
+      <progress id="savingsBar" max="100" value="20"></progress>
+    </div>
+    <div id="errorMessage" class="error hidden">
+      Your not making a good choice!!!
+    </div>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
 </main>
   </body>
 </html>
