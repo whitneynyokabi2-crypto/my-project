@@ -8,13 +8,13 @@
   </head>
   <body>
     <header>
-      <h1 style="color:rgb(255, 17, 0);">Project title: Whity Cash</h1>
+      <h1>Project title: Whity Cash</h1>
       <p class="problem-statement">We believe that newly employed youths will be helped by a saving app to save some of their money and help budget them because 68% of newly employed youths cannot save because they do not know how to budget.</p>
     </header>
     <main>
       <section id="evidence">
         <h2>Why this matters</h2>
-        <p>this matters because newly employed youths end up homeless because they did not budget their money for rent and many other things. according to a report done on tech cabal  68% of  newly employed youths cannot save because they do not know how to budget. <a target="_blank" href="https://techcabal.com/2026/03/31/kenyan-workers-report-higher-incomes-but-lean-more-on-credit-side-hustles/">Report By Kenn Abuya on Tech Cabal</a>
+        <p>this matters because newly employed youths end up in debt because they did not budget their money for rent and many other things. according to a report done on tech cabal  68% of  newly employed youths cannot save because they do not know how to budget. <a rel="noopener" target="_blank" href="https://techcabal.com/2026/03/31/kenyan-workers-report-higher-incomes-but-lean-more-on-credit-side-hustles/">Report By Kenn Abuya on Tech Cabal</a>
 </p>
       </section>
 <section id="feature">
@@ -33,7 +33,7 @@
         <span>Needs</span>
         <span id="needsValue">50%</span>
       </label>
-      <input type="range" id="needsSlider" min="0" max="100" value="50" />
+      <input placeholder="Needs Range" type="range" id="needsSlider" min="0" max="100" value="0" />
       <progress id="needsBar" max="100" value="50"></progress>
     </div>
     <div class="slider-group">
@@ -41,7 +41,7 @@
         <span>Wants</span>
         <span id="wantsValue">30%</span>
       </label>
-      <input type="range" id="wantsSlider" min="0" max="100" value="30" />
+      <input placeholder="Wants Range" type="range" id="wantsSlider" min="0" max="100" value="0" />
       <progress id="wantsBar" max="100" value="30"></progress>
     </div>
     <div class="slider-group">
@@ -49,12 +49,12 @@
         <span>Savings</span>
         <span id="savingsValue">20%</span>
       </label>
-      <input type="range" id="savingsSlider" min="0" max="100" value="20" />
+      <input placeholder="Savings Range" type="range" id="savingsSlider" min="0" max="100" value="0" />
       <progress id="savingsBar" max="100" value="20"></progress>
     </div>
-    <div id="errorMessage" class="error hidden">
+    <!-- <div id="needsErrorMessage" class="error hidden">
       You're not making a good choice.
-    </div>
+    </div> -->
   </div>
 </section>
 </main>
@@ -62,4 +62,3 @@
 </main>
   </body>
 </html>
-
