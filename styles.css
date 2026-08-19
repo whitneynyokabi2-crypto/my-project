@@ -7,6 +7,9 @@
     padding: 20px;
     background: #f5f7fa;
     color: #222;
+    background-image: src("Gemini_Generated_Image_hxr472hxr472hxr4.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   header,
   main {
