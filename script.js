@@ -19,18 +19,6 @@ function updateBudget() {
     const needs = Number(needsSlider.value);
     const wants = Number(wantsSlider.value);
     const savings = Number(savingsSlider.value);
-<<<<<<< HEAD
-    document.getElementById("needsValue").textContent = needs + "%";
-    document.getElementById("wantsValue").textContent = wants + "%";
-    document.getElementById("savingsValue").textContent = savings + "%";
-    document.getElementById("needsBar").value = needs;
-    document.getElementById("wantsBar").value = wants;
-    document.getElementById("savingsBar").value = savings;
-    if (needs > 50 || wants > 30) {
-      errorMessage.classList.remove("hidden");
-    } else {
-      errorMessage.classList.add("hidden");
-=======
     document.getElementById("needsValue").textContent = needs + "% (" + (salary * needs / 100).toFixed(2) + ")";
     document.getElementById("wantsValue").textContent = wants + "% (" + (salary * wants / 100).toFixed(2) + ")";
     document.getElementById("savingsValue").textContent = savings + "% (" + (salary * savings / 100).toFixed(2) + ")";
@@ -45,7 +33,6 @@ function updateBudget() {
     }
     else if(wants > 30 && needs > 50) {
        alert(`Please note both your needs and wants are exceeding the recommended percentages. This leaves you with only ${100-needs-wants}% to save`);
->>>>>>> 21e293e (fix issues from user test 1)
     }
 }
 saveSalaryBtn.addEventListener("click", handleSalarySubmit);
